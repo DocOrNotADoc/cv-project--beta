@@ -1,0 +1,65 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $darkfont;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.padding-top-regular {
+  padding-top: 120px;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0;
+}
+
+.round {
+  position: relative;
+  @include before-circle;
+  z-index: 2;
+  &_left {
+    padding-left: 10px;
+    &:before {
+      left: 0;
+    }
+  }
+  &_center {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.divider {
+  position: relative;
+  @include before-divider;
+  z-index: 2;
+  &_left {
+    padding-left: 10px;
+    &:before {
+      left: 0;
+    }
+  }
+  &_center {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url('../img/main_bg.jpg') no-repeat 50% / cover;
+  padding-top: 26vh;
+  &__ttl {
+    width: 532px;
+    margin-top: 11px;
+  }
+  &__btns {
+    margin-top: 29px;
+    display: flex;
+    max-width: 300px;
+  }
+}
+
+.test {
+  max-width: 1500px;
+  height: 1000px;
+  background-color: red;
+}
