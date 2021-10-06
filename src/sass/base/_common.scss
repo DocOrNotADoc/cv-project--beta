@@ -15,6 +15,9 @@ a {
     text-decoration: none;
   }
 }
+p {
+  margin-bottom: 0;
+}
 
 .container {
   width: 1140px;
@@ -30,16 +33,22 @@ h1, h2, h3, h4 {
 }
 
 .round {
-  position: relative;
   @include before-circle;
-  z-index: 2;
   &_left {
-    padding-left: 10px;
+    padding: 7px 0 0 10px;
+    &:before {
+      top: 0;
+      left: 0;
+    }
+  }
+  &_icon {
+    padding: 15px 0 0 15px;
     &:before {
       left: 0;
     }
   }
   &_center {
+      padding-top: 7px;
     &:before {
       left: 50%;
       transform: translateX(-50%);
@@ -47,15 +56,7 @@ h1, h2, h3, h4 {
   }
 }
 .divider {
-  position: relative;
   @include before-divider;
-  z-index: 2;
-  &_left {
-    padding-left: 10px;
-    &:before {
-      left: 0;
-    }
-  }
   &_center {
     &:before {
       left: 50%;
