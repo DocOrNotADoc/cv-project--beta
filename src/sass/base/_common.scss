@@ -28,7 +28,11 @@ p {
   padding-top: 120px;
 }
 
-h1, h2, h3, h4 {
+.tac {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
   margin-bottom: 0;
 }
 
@@ -37,7 +41,6 @@ h1, h2, h3, h4 {
   &_left {
     padding: 7px 0 0 10px;
     &:before {
-      top: 0;
       left: 0;
     }
   }
@@ -57,9 +60,15 @@ h1, h2, h3, h4 {
 }
 .divider {
   @include before-divider;
+  &_left {
+    &:before {
+      bottom: 0;
+    }
+  }
   &_center {
     &:before {
       left: 50%;
+      bottom: -21px;
       transform: translateX(-50%);
     }
   }

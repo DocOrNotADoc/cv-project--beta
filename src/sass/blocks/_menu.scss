@@ -30,6 +30,10 @@
     top: 24px;
     right: 25px;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.15);
+      transition: $transition;
+    }
   }
   &__socials {
     position: absolute;
@@ -60,6 +64,10 @@
       font-weight: 700;
       line-height: 36px;
       color: $lightfont;
+      &:hover {
+        transform: scale(1.01);
+        transition: $transition;
+      }
     }
     &::before {
       content: '';
