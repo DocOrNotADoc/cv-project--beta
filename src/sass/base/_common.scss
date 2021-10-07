@@ -18,6 +18,13 @@ a {
 p {
   margin-bottom: 0;
 }
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0;
+}
+ul {
+  margin-bottom: 0;
+  list-style-type: none;
+}
 
 .container {
   width: 1140px;
@@ -30,10 +37,6 @@ p {
 
 .tac {
   text-align: center;
-}
-
-h1, h2, h3, h4, h5 {
-  margin-bottom: 0;
 }
 
 .round {
