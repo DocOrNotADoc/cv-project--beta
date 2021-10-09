@@ -34,7 +34,9 @@ ul {
 .padding-top-regular {
   padding-top: 120px;
 }
-
+.mt-regular {
+  margin-top: 85px;
+}
 .tac {
   text-align: center;
 }
@@ -45,6 +47,12 @@ ul {
     padding: 7px 0 0 10px;
     &:before {
       left: 0;
+    }
+    &-sm {
+      padding: 8px 0 0 10px;
+      &:before {
+        left: 0;
+      }
     }
   }
   &_icon {

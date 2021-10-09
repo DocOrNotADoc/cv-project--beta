@@ -55,10 +55,18 @@ const closeMenu = () => {
 // show menu & hide scroll, if user click burger
 burger.addEventListener('click', showMenu);
 
-
 // close menu & show scroll, if user click close // menu // fill
 clicMeToCloseMenu.forEach(item => {
   item.addEventListener('click', closeMenu);
 });
 // close menu & show scroll, IF USER START TO RESIZE WINDOW
 window.addEventListener('resize', closeMenu);
+
+
+// skills - progress bars
+const skillsSkales = document.querySelectorAll('.skills__percent'),
+  skillsProgressSkales = document.querySelectorAll('.skills__skale__progress');
+
+skillsSkales.forEach((item, i) => {
+  skillsProgressSkales[i].style.width = item.innerHTML;
+});

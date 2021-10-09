@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: repeat(2, 425px);
     column-gap: 136px;
-    margin-top: 85px;
     justify-content: center;
     overflow: hidden;
   }
@@ -28,21 +27,11 @@
     width: 375px;
     position: relative;
     margin-left: 35px;
-    &:before {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      top: -5px;
-      left: -28px;
-      background-color: $darkfont;
-      z-index: -1;
-    }
     &:after {
       content: '';
       position: absolute;
       width: 1px;
-      height: 47px;
+      height: calc(100% + 47px);
       top: -52px;
       left: -28px;
       background-color: $darkfont;
