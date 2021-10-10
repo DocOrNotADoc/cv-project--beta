@@ -16,7 +16,7 @@
 @mixin before-divider {
   position: relative;
   z-index: 2;
-  &:before{
+  &:after{
     content: '';
     position: absolute;
     width: 60px;

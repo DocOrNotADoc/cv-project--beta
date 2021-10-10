@@ -1,10 +1,12 @@
 .btn {
+  height: 45px;
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
   transition: $transition;
   color: $darkfont;
+  border: none;
   &:hover {
     color: $darkfont;
   }
