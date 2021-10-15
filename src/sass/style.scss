@@ -4,17 +4,28 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/common';
+@import 'base/common-media';
+@import 'blocks/round-and-divider';
+@import 'blocks/round-and-divider-media';
 
 
 @import 'blocks/sidepanel';
+@import 'blocks/sidepanel-media';
 @import 'blocks/promo';
+@import 'blocks/promo-media';
 @import 'blocks/ttl';
+@import 'blocks/ttl-media';
 @import 'blocks/btn';
 @import 'blocks/hamburger';
+@import 'blocks/hamburger-media';
 @import 'blocks/menu';
+@import 'blocks/menu-media';
 @import 'blocks/about';
+@import 'blocks/about-media';
 @import 'blocks/benefit';
+@import 'blocks/benefit-media';
 @import 'blocks/skills';
+@import 'blocks/skills-media';
 @import 'blocks/portfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';

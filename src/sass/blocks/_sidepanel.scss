@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   height: 340px;
-  top: 29%;
-  // left: 53px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 2vw;
   z-index: 8;
   &__link {

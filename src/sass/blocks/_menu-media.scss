@@ -1,0 +1,11 @@
+.menu {
+  @media (max-width: 767px) {
+    &__socials {
+      bottom: 14vh;
+      a {
+        margin: 0 7px;
+        hover: none;
+      }
+    }
+  }
+}

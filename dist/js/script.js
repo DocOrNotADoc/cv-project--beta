@@ -2,9 +2,10 @@
 const burger = document.querySelector('.hamburger'),
   menu = document.querySelector('.menu'),
   menuItems = document.querySelectorAll('.menu__link a'),
+  menuSocialLinks = document.querySelectorAll('.menu__socials a'),
   closeBtn = document.querySelector('.menu__close'),
   fill = document.querySelector('.menu__fill'),
-  clicMeToCloseMenu = [...menuItems, closeBtn, fill];
+  clicMeToCloseMenu = [...menuItems, ...menuSocialLinks, closeBtn, fill];
 
 // get scrollbar width
 const getScrollbarWidth = () => {

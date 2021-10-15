@@ -1,0 +1,36 @@
+.about {
+
+  @media (max-width: 1199px) {
+    &__wrapper {
+      gap: 54px;
+    }
+    &__skills {
+      grid-template-columns: calc(100% - 14px);
+    }
+  }
+  @media (max-width: 991px) {
+    &__wrapper {
+      grid-template-columns: auto;
+      gap: 45px;
+    }
+    &__photo {
+      justify-self: center;
+    }
+  }
+  @media (max-width: 575px) {
+    &__wrapper {
+      grid-template-columns: auto;
+    }
+    &__photo {
+      width: 300px;
+      height: 340px;
+      justify-self: center;
+    }
+    &__me {
+      margin-top: 35px;
+    }
+    &__skills {
+      grid-template-columns: calc(100% - 14px);
+    }
+  }
+}
