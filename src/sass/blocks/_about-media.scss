@@ -14,7 +14,8 @@
       gap: 45px;
     }
     &__photo {
-      justify-self: center;
+      display: none;
+      // justify-self: center;
     }
   }
   @media (max-width: 575px) {
@@ -22,6 +23,7 @@
       grid-template-columns: auto;
     }
     &__photo {
+      display: block;
       width: 300px;
       height: 340px;
       justify-self: center;

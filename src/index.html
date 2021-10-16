@@ -97,7 +97,7 @@
         <div class="menu__fill"></div>
     </div>
 
-    <!-- <section class="promo">
+    <section class="promo">
         <div class="container">
 
             <h2 class="ttl ttl__subttl round round_left">Меня зовут Александра Смит</h2>
@@ -108,13 +108,13 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="about pt-regular">
+    <section class="about pt-regular">
         <picture class="container">
             <div class="about__wrapper">
                 <picture class="about__photo">
-                    <source srcset="/img/main_photo-cell.jpg" media="(max-width: 575px)">
+                    <source srcset="/img/main_photo-cell.jpg" media="(max-width: 991px)">
                     <img src="/img/main_photo.jpg" alt="my photo">
                 </picture>
                 <div class="about__texts">
@@ -176,9 +176,9 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="benefit pt-regular">
+    <section class="benefit pt-regular">
         <div class="container">
             <h2 class="ttl ttl__subttl tac round round_center">Опыт</h2>
             <h3 class="ttl ttl__regular tac divider divider_center">Чем я буду полезна</h3>
@@ -273,9 +273,9 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="skills pt-regular">
+    <section class="skills pt-regular">
         <div class="container">
             <h2 class="ttl ttl__subttl tac round round_center">Навыки</h2>
             <h3 class="ttl ttl__regular tac divider divider_center">Что я использую в работе</h3>
@@ -472,7 +472,7 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <section class="portfolio pt-regular">
         <div class="container">
@@ -490,21 +490,27 @@
                     <img src="./img/works/bread.jpg" alt="bread">
                 </a>
                 <a href="#" class="portfolio__item vertical">
-                    <img src="./img/works/plans.jpg" alt="plans">
+                    <picture>
+                        <source srcset="./img/works/plans-square.jpg" media="(max-width: 1199px)">
+                        <img src="./img/works/plans.jpg" alt="mac">
+                    </picture>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="./img/works/ipad.jpg" alt="ipad">
                 </a>
                 <a href="#" class="portfolio__item horizontal">
-                    <img src="./img/works/mac.jpg" alt="mac">
+                    <picture>
+                        <source srcset="./img/works/mac-square.jpg" media="(max-width: 1199px)">
+                        <img src="./img/works/mac.jpg" alt="mac">
+                    </picture>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- <section class="price pt-half">
+    <section class="price">
         <div class="container">
-            <h2 class="ttl ttl__subttl tac round round_center divider divider_center">Портфолио</h2>
+            <h2 class="ttl ttl__subttl tac round round_center divider divider_center">Прайс-лист</h2>
 
             <ul class="price__list">
                 <li class="price__list-item">
@@ -552,56 +558,59 @@
             </ul>
 
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts pt-regular">
+    <section class="contacts pt-regular">
         <div class="container">
-
             <div class="contacts__wrapper">
+
                 <div class="contacts__photo">
-                    <img src="/img/main_photo.jpg" alt="my photo">
+                    <picture class="contacts__photo">
+                        <!-- <source srcset="/img/main_photo-cell.jpg" media="(max-width: 1199px)"> -->
+                        <img src="/img/main_photo.jpg" alt="my photo">
+                    </picture>
                 </div>
-            </div>
-            <div class="contacts__texts-and-form">
-                <h2 class="ttl ttl__subttl round round_left">Про меня</h2>
-                <h3 class="ttl ttl__regular divider divider_left">Меня зовут Александра</h3>
+                <div class="contacts__texts-and-form">
+                    <h2 class="ttl ttl__subttl round round_left">Контакты</h2>
+                    <h3 class="ttl ttl__regular divider divider_left">Свяжитесь со мной</h3>
 
-                <div class="ttl ttl__text contacts__to-social">Любым удобным для вас способом:</div>
-                <div class="contacts__socials">
-                    <a href="#"><img src="./icons/social/facebook.svg" alt="facebook"></a>
-                    <a href="#"><img src="./icons/social/telegram.svg" alt="telegram"></a>
-                    <a href="#"><img src="./icons/social/instagram-90.svg" alt="instagram"></a>
-                </div>
-                <div class="ttl ttl__text contacts__form-ttl">Или оставьте ваши данные и я сама вам напишу:</div>
-
-                <form action="#" class="contacts__form">
-                    <div class="contacts__input">
-                        <input required name="name" id="name" type="text" placeholder="Иван">
-                        <label for="name">Ваше имя</label>
+                    <div class="ttl ttl__text contacts__to-social">Любым удобным для вас способом:</div>
+                    <div class="contacts__socials">
+                        <a href="#"><img src="./icons/social/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="./icons/social/telegram.svg" alt="telegram"></a>
+                        <a href="#"><img src="./icons/social/instagram-90.svg" alt="instagram"></a>
                     </div>
-                    <div class="contacts__input">
-                        <input required name="email" id="email" type="email">
-                        <label for="email">Ваша почта</label>
-                    </div>
+                    <div class="ttl ttl__text contacts__form-ttl">Или оставьте ваши данные и я сама вам напишу:</div>
 
-                    <div class="contacts__textarea">
-                        <textarea name="text" id="text"></textarea>
-                        <label for="text">Ваше сообщение</label>
-                    </div>
-
-                    <div class="contacts__triggers">
-                        <div><button class="btn btn__primary">Отправить сообщение</button></div>
-                        <div class="contacts__policy">
-                            <input required type="checkbox">
-                            <span>Я согласен(а) с <a href="/privacy.html">политикой конфиденциальности</a></span>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text" placeholder="Иван">
+                            <label for="name">Ваше имя</label>
                         </div>
-                    </div>
-                    
-                </form>
-            </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
 
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+
+                        <div class="contacts__triggers">
+                            <div><button class="btn btn__primary">Отправить сообщение</button></div>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/privacy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>
