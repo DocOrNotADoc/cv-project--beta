@@ -8,4 +8,10 @@
       }
     }
   }
+  @media (max-width: 575px) {
+  &__block {
+    width: 260px;
+    padding-left: 20px;
+  }
+  }
 }
